@@ -2,7 +2,7 @@
 
 <% form_for(@project) do |f| %>
   <%= f.error_messages %>
-
+  <%= f.text_field :full_name %>
   <p>
     <%= f.submit 'Update' %>
   </p>

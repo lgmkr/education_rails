@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: Oleg
+  last_name: Makarov
+
+two:
+  first_name: Tanja
+  last_name: Makarova

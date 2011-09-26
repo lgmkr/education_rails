@@ -9,3 +9,5 @@ require 'active_record/fixtures'
 
 Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "tasks")
 Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "projects")
+p "-- start insert users"
+Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "users")

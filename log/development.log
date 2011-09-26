@@ -131,3 +131,224 @@ ActionController::RoutingError (No route matches "/stylesheets/projects.css" wit
   /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (178.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-09-26 23:47:02) [GET]
+  [4;35;1mProject Load (117.7ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Columns (290.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 3014ms (View: 1580, DB: 586) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-26 23:47:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/projects.css" with {:method=>:get}):
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-09-26 23:47:20) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 8586ms (View: 8544, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (164.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-26 23:47:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/projects.css" with {:method=>:get}):
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (357.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (375.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (556.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20110918210604)
+Migrating to CreateTasks (20110918210654)
+Migrating to AddCompleteToTask (20110924212400)
+Migrating to CreateUsers (20110926212641)
+  [4;35;1mSQL (598.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (44.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110926212641')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (273.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mdescribe `projects`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW KEYS FROM `projects`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `tasks`[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mSHOW KEYS FROM `tasks`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (18.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-09-27 00:36:03) [GET]
+  [4;35;1mProject Load (11.2ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Columns (38.1ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 4654ms (View: 2698, DB: 57) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-09-27 00:36:10) [GET]
+  [4;36;1mUser Load (61.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 1834ms (View: 1614, DB: 63) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-09-27 00:36:40) [GET]
+  [4;35;1mUser Load (4.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (394.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 22833ms (View: 76, DB: 414) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-09-27 00:37:21) [GET]
+  Parameters: {"id"=>"298486374"}
+  [4;36;1mUser Columns (22.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (60.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 298486374) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 198ms (View: 71, DB: 84) | 200 OK [http://127.0.0.1/users/298486374/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-09-27 00:37:33) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 980190962) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 89ms (View: 48, DB: 5) | 200 OK [http://127.0.0.1/users/980190962/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-09-27 00:37:36) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"DCXDRedCwYwqeVTjUD+sg3w4zZ4nCAR8oAy+ANBe2ss=", "id"=>"980190962", "user"=>{"full_name"=>"Oleg Makarov"}}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 980190962) [0m
+  [4;36;1mSQL (177.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: full_name):
+  app/controllers/users_controller.rb:62:in `update'
+  app/controllers/users_controller.rb:61:in `update'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/stan/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (730.1ms)
+Rendered rescues/_request_and_response (179.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-09-27 00:39:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 980190962) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 62ms (View: 43, DB: 3) | 200 OK [http://127.0.0.1/users/980190962]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-09-27 00:39:33) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-09-27 00:39:35) [GET]
+  Parameters: {"id"=>"298486374"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 298486374) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 40ms (View: 19, DB: 5) | 200 OK [http://127.0.0.1/users/298486374/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-09-27 00:39:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"DCXDRedCwYwqeVTjUD+sg3w4zZ4nCAR8oAy+ANBe2ss=", "id"=>"298486374", "user"=>{"full_name"=>"Tanja Makarova2"}}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 298486374) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (188.5ms)[0m   [0mUPDATE `users` SET `updated_at` = '2011-09-26 21:39:38', `last_name` = 'Makarova2' WHERE `id` = 298486374[0m
+  [4;36;1mSQL (213.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/users/298486374
+Completed in 980ms (DB: 404) | 302 Found [http://127.0.0.1/users/298486374]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-09-27 00:39:39) [GET]
+  Parameters: {"id"=>"298486374"}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 298486374) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 50ms (View: 27, DB: 7) | 200 OK [http://127.0.0.1/users/298486374]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-09-27 00:39:43) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (5.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 510ms (View: 487, DB: 6) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-09-27 00:39:45) [GET]
+  Parameters: {"id"=>"298486374"}
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (33.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 298486374) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 50ms (View: 6, DB: 37) | 200 OK [http://127.0.0.1/users/298486374/edit]
